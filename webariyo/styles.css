@@ -1,0 +1,269 @@
+/*------------homepage*/
+body{
+
+    background: #1F1F1F;
+}
+.container{
+    padding-top:20px;
+    margin:15px auto;
+    display: block;
+}
+
+.desc-home{
+    padding:15px 0px;
+    
+}
+
+/* ------------------first  row------------ */
+.container-fluid{
+    background: #1F1F1F;
+    display :block;
+}
+.container-fluid::after{
+    content: "";
+    height: 100%;
+    z-index: 9;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    display: block;
+    background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0.65) 53.65%, #1F1F1F 98.44%);
+}
+
+#logo {
+    display: flex;
+    width: 200px;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    flex-direction: row;
+    padding: 17em 0;
+}
+
+#first-row{
+    background-image: url('http://kir.com/newm/wp-content/uploads/2022/09/Group6.svg');
+    height:100%;
+    min-height:250px;
+    width: 100%;
+    display: block;
+}
+
+/*-------------------first section codepen*/
+#container { margin: 0%;
+    height: 100%;
+    z-index: 9999;
+    width: 100%;
+    top: 10%;
+    left: 0;
+    position: absolute;
+    color: white;
+    overflow: hidden;
+    
+}
+
+#circle-text ,#circle-text2 {
+    height: 100vh;
+    width: 100vw;}
+    
+    .inner {
+      transform-origin: 50% 50%;
+      transform: scale(0.75);
+    }
+  
+ #circle-text{ position: absolute; 
+   
+    left: 0; 
+    top: 0; 
+    width: 100%; 
+    height: 540px;
+    animation-name: rotate;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+}
+#circle-text2{ 
+    position: absolute; 
+   
+    left: 0; 
+    top: 0; 
+    width: 100%; 
+    height: 540px;
+    animation-name: re-rotate;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+}
+
+
+@keyframes rotate {
+    from { transform: rotate(-360deg); }
+    to { transform: rotate(0); }
+}
+@keyframes re-rotate {
+    from { transform: rotate(360deg); }
+    to { transform: rotate(0); }
+}
+/* ------------------second  row------------ */
+/*-------desc - section */
+.row-des ,.desc-home{
+    color:white;
+    padding:20px;
+    width:80%;
+    margin:12px auto;
+    
+}
+.s-section{
+    background: linear-gradient(165.46deg, #0A0A0A 2.04%, #353535 94.74%);
+    border-radius:35px;
+    margin:5px;
+    color:white;
+    width:30%;
+    padding:20px;
+}
+.s-section img{
+    width:230px;
+    height:230px;
+    float:left;
+
+}
+
+/* -------------- only desktop*/
+@media only screen and (min-width:769px){
+    .icons-text {
+        background: linear-gradient(165.46deg, #474747 2.04%, #1E1E1E 94.74%);
+    box-shadow: -40px 0px 20px -30px rgba(0, 0, 0, 0.25);
+    border-radius: 0px 35px 35px 93px;
+        height:25rem;
+    width:20rem;
+    font-size:12px;
+        padding:2rem;
+        display:inline-table;
+        transform: translateY(-23rem);
+        }
+    .incol{
+        height:25rem;
+    }
+    
+    .s-section{
+        padding:0px;
+    }
+}
+
+/* ------------------third row------------ */
+
+
+
+.third-row{
+    display: flex;
+    flex-direction: row;
+}
+
+.third-row img{
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.team{
+    filter: grayscale(100%);
+    }
+    .team:hover{
+        filter: grayscale(0%);
+        transition-delay: 0.2s;
+    }
+
+.team-third img{    
+    width:170px;
+    height:170px;
+    border-radius:35px;
+}
+
+.imp-team img{
+    min-width:200px;
+    width:100%;
+    max-width:450px;
+}
+@media only screen and (max-width:767px){
+
+    .team-third img{
+        max-width:400px;
+        min-width:200px;
+        width:100%;
+     min-height:200px;
+        height:300px;
+        max-height:350px;
+    }
+    .space{
+        height: 3% !important;
+    }
+}
+
+.space{
+    height: 23%;
+}
+
+
+
+.fourth-row{
+    display:
+    flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.fourth-row .mission{
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+        width:30%;
+    min-width:190px;
+    max-width:270px; 
+
+    
+}
+.fourth-row .mission img{
+    border-radius:35px;
+    height:300px;
+    width:100%;
+    min-width:190px;
+    max-width:270px; 
+
+}
+
+/* ------------------second row mobile version ------------ */
+
+@media only screen and (max-width:768px){
+    #second-row{
+            justify-content: center;
+    }
+     
+     .s-section{
+         width:100%;
+         max-width:300px;
+ 
+     }
+ }
+
+
+
+
+.mission{
+    background: linear-gradient(133.34deg, #0A0A0A 1.25%, rgba(53, 53, 53, 0) 70.9%);  
+    color:white;
+    padding:5px;
+    border-radius:35px 35px 0 0 ;
+    text-align:right;
+    margin:2px;
+    
+}
+
+
+/*----------------blog */
+#home-g-blog{
+    display:inline-block;
+    margin:12px;
+    text-align:center;
+}
